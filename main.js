@@ -180,8 +180,8 @@ class Main {
 
 
         mongoose.Promise = global.Promise;
-        mongoose.connect(`${databaseDriver}://${databaseUser}:${databasePwd}@${databaseHost}:${databasePort},${databaseHost_2}:${databasePort_2},${databaseHost_3}:${databasePort_3}/${databaseCollection}?authSource=admin`, {
-        // mongoose.connect(`${databaseDriver}://${databaseUser}:${databasePwd}@${databaseHost}:${databasePort}/${databaseCollection}?authSource=admin`, {
+        // mongoose.connect(`${databaseDriver}://${databaseUser}:${databasePwd}@${databaseHost}:${databasePort},${databaseHost_2}:${databasePort_2},${databaseHost_3}:${databasePort_3}/${databaseCollection}?authSource=admin`, {
+        mongoose.connect(`${databaseDriver}://${databaseUser}:${databasePwd}@${databaseHost}:${databasePort}/${databaseCollection}`, {
             useNewUrlParser: true,
             // sets how many times to try reconnecting
             reconnectTries: Number.MAX_VALUE,
@@ -191,7 +191,7 @@ class Main {
             autoIndex: true,
             numberOfRetries : 5,
             // replset name
-            replicaSet
+            // replicaSet
              
         },(err)=>{
 

@@ -119,64 +119,64 @@ class BaseHandler {
         await this.registerMiddlewares();
 
         //GTBank Validation
-        let isInvalid = await RequestMiddleware.checkIfGtbankTerminalValidTransactionAmount(this.unpackedMessage);
-        if (isInvalid == true) {
-            this.socketServerInstance.end();
-            response.error = true;
-            return response;
-        }
+        // let isInvalid = await RequestMiddleware.checkIfGtbankTerminalValidTransactionAmount(this.unpackedMessage);
+        // if (isInvalid == true) {
+        //     this.socketServerInstance.end();
+        //     response.error = true;
+        //     return response;
+        // }
 
         //NIPCO Validation
-        isInvalid = await RequestMiddleware.checkIfNIPCOTerminalValidTransactionAmount(this.unpackedMessage);
-        if (isInvalid == true) {
-            this.socketServerInstance.end();
-            response.error = true;
-            return response;
-        }
+        // isInvalid = await RequestMiddleware.checkIfNIPCOTerminalValidTransactionAmount(this.unpackedMessage);
+        // if (isInvalid == true) {
+        //     this.socketServerInstance.end();
+        //     response.error = true;
+        //     return response;
+        // }
 
         // providus validation
-        let valid = await RequestMiddleware.checkProvidusRequest(this.unpackedMessage);
-        if (valid == false) {
-            this.socketServerInstance.end();
-            response.error = true;
-            return response;
-        }
+        // let valid = await RequestMiddleware.checkProvidusRequest(this.unpackedMessage);
+        // if (valid == false) {
+        //     this.socketServerInstance.end();
+        //     response.error = true;
+        //     return response;
+        // }
         ///////
 
         // FRSC validation
-        let frsc = await RequestMiddleware.checkFrscRequest(this.unpackedMessage);
-        if (frsc == false) {
-            this.socketServerInstance.end();
-            response.error = true;
-            return response;
-        }
+        // let frsc = await RequestMiddleware.checkFrscRequest(this.unpackedMessage);
+        // if (frsc == false) {
+        //     this.socketServerInstance.end();
+        //     response.error = true;
+        //     return response;
+        // }
         ///////
 
         // STERLLING validation
-        let sterling = await RequestMiddleware.checkSterlingRequest(this.unpackedMessage);
-        if (sterling == false) {
-            this.socketServerInstance.end();
-            response.error = true;
-            return response;
-        }
+        // let sterling = await RequestMiddleware.checkSterlingRequest(this.unpackedMessage);
+        // if (sterling == false) {
+        //     this.socketServerInstance.end();
+        //     response.error = true;
+        //     return response;
+        // }
         ///////
 
         // gtb monitor validation
-        let gtb = RequestMiddleware.checkGtbMonitorRequest(this.unpackedMessage);
-        if (gtb == false) {
-            this.socketServerInstance.end();
-            response.error = true;
-            return response;
-        }
+        // let gtb = RequestMiddleware.checkGtbMonitorRequest(this.unpackedMessage);
+        // if (gtb == false) {
+        //     this.socketServerInstance.end();
+        //     response.error = true;
+        //     return response;
+        // }
         ///////
 
         // exhangebox notification validation
-        let exchangebox = await RequestMiddleware.checkExchangeboxRequest(this.unpackedMessage);
-        if (exchangebox == false) {
-            this.socketServerInstance.end();
-            response.error = true;
-            return response;
-        }
+        // let exchangebox = await RequestMiddleware.checkExchangeboxRequest(this.unpackedMessage);
+        // if (exchangebox == false) {
+        //     this.socketServerInstance.end();
+        //     response.error = true;
+        //     return response;
+        // }
         ///////
 
         // rsuth notification validation
@@ -189,19 +189,19 @@ class BaseHandler {
         ///////
 
         // etz notification validation
-        let clearRef = RequestMiddleware.checkClearCustomerRefRequest(this.unpackedMessage);
-        if (clearRef) {
-            this.clearCustRef = clearRef;
-        }
+        // let clearRef = RequestMiddleware.checkClearCustomerRefRequest(this.unpackedMessage);
+        // if (clearRef) {
+        //     this.clearCustRef = clearRef;
+        // }
 
-        let isValidEtzRequest = RequestMiddleware.checkEtzTransactionAboveThreshold(this.unpackedMessage, process.env.etz_threshhold_amount);
+        // let isValidEtzRequest = RequestMiddleware.checkEtzTransactionAboveThreshold(this.unpackedMessage, process.env.etz_threshhold_amount);
         
         
-        if(isValidEtzRequest == false) {
-            this.socketServerInstance.end();
-            response.error = true;
-            return response;
-        }
+        // if(isValidEtzRequest == false) {
+        //     this.socketServerInstance.end();
+        //     response.error = true;
+        //     return response;
+        // }
         ///////
 
         // for IGR request
@@ -210,14 +210,14 @@ class BaseHandler {
         this.isWemaCollect = RequestMiddleware.checkWemaCollectRequest(this.unpackedMessage);
 
         // temporary for migrated terminals
-        let prompt = RequestMiddleware.checkforMigratedTerminal(this.unpackedMessage);
-        if (prompt != false) {
-            console.error(`Forcing terminal to reprep, ${Util.getTerminalId(this.unpackedMessage)}, data ${prompt.toString()} at ${new Date().toString()}`);
-            this.socketServerInstance.write(prompt);
-            this.socketServerInstance.end();
-            response.error = true;
-            return response;
-        }
+        // let prompt = RequestMiddleware.checkforMigratedTerminal(this.unpackedMessage);
+        // if (prompt != false) {
+        //     console.error(`Forcing terminal to reprep, ${Util.getTerminalId(this.unpackedMessage)}, data ${prompt.toString()} at ${new Date().toString()}`);
+        //     this.socketServerInstance.write(prompt);
+        //     this.socketServerInstance.end();
+        //     response.error = true;
+        //     return response;
+        // }
         ///////
 
         //Call Pre Process Middlewares

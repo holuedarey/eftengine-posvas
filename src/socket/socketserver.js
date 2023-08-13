@@ -18,11 +18,11 @@ class SocketServer {
             let defaulTLSSocketOptions = {
 
                 // Necessary only if using the client certificate authentication
-                // key: fs.readFileSync(process.env.CERTIFICATES_KEY_PATH),
-                // cert: fs.readFileSync(process.env.CERTIFICATES_CRT_PATH),
+                key: fs.readFileSync(process.env.CERTIFICATES_KEY_PATH),
+                cert: fs.readFileSync(process.env.CERTIFICATES_CRT_PATH),
                 secureOptions: constants.SSL_OP_NO_TLSv1 | constants.SSL_OP_NO_TLSv1_1,
-                pfx: fs.readFileSync(process.env.CERTIFICATES_PFX_PATH),
-                passphrase: process.env.CERTIFICATES_PFX_PASSPHRASE,
+                // pfx: fs.readFileSync(process.env.CERTIFICATES_PFX_PATH),
+                // passphrase: process.env.CERTIFICATES_PFX_PASSPHRASE,
 
                 // This is necessary only if using the client certificate authentication.
                 //requestCert: true,
