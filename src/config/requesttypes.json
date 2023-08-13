@@ -1,0 +1,121 @@
+{
+	"0100": {
+		"31": {
+		"name": "Balance Inquiry"
+		},
+		"30": {
+		"name": "Link Account Inquiry"
+		},
+		"38": {
+		"name": "Mini - Statement"
+		},
+		"60": {
+		"name": "Link Account Inquiry"
+		},
+		"90": {
+		"name": "PIN Change"
+		}
+    },
+    "0420": {
+		"default": {
+		    "name": "Reversal Advice"
+        },
+        "00": {
+            "name": "Reversal Advice"
+        }
+    },
+    "0421": {
+		"default": {
+		"   name": "Reversal Advice Repeat"
+        },
+        "00": {
+            "name": "Reversal Advice Repeat"
+        }
+    },
+	"0200": {
+		"00": {
+		"name": "Purchase"
+		},
+		"01": {
+		"name": "Cash Advance"
+		},
+		"20": {
+		"name": "Refund/Return"
+		},
+		"21": {
+		"name": "Deposit"
+		},
+		"09": {
+		"name": "Purchase with Cash back"
+		},
+		"40": {
+		"name": "Fund Transfer"
+		},
+		"48": {
+		"name": "Bill Payments"
+		},
+		"4A": {
+		"name": "Prepaid"
+		},
+		"4F": {
+		"name": "Purchase with Additional Data"
+		}
+	},
+	"0201": {
+		"00": {
+		"name": "Purchase Requery"
+		}
+	},
+	"0220": {
+		"61": {
+		"name": "POS Pre – Authorization Completion"
+		}
+	},
+	"0800": {
+		"4B": {
+		"name": "Biller List Download"
+		},
+		"4C": {
+		"name": "Product List Download"
+		},
+		"4D": {
+		"name": "Biller Subscription Information Download"
+		},
+		"4E": {
+		"name": "Payment Validation"
+		},
+		"9A": {
+		"name": "Terminal Master Key"
+		},
+		"9B": {
+		"name": "Terminal Session Key"
+		},
+		"9G": {
+		"name": "Terminal PIN Key"
+		},
+		"9I": {
+		"name": "Initial PIN Encryption Key Download – Track2 Data"
+		},
+		"9J": {
+		"name": "Initial PIN Encryption Key Download – EMV"
+		},
+		"9C": {
+		"name": "Terminal Parameter Download"
+		},
+		"9D": {
+		"name": "Call – home 0800"
+		},
+		"9E": {
+		"name": "CA Public Key Download"
+		},
+		"9F": {
+		"name": "EMV Application AID Download"
+		},
+		"9H": {
+		"name": "Daily Transaction Report Download"
+		},
+		"9K": {
+		"name": "Dynamic Currency Conversion"
+		}
+	}
+}

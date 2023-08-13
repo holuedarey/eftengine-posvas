@@ -1,0 +1,14 @@
+[
+    {"nibss" :  "00", "tams" : "1"},
+    {"nibss" :  "01", "tams" : "1"},
+    {"nibss" :  "09", "tams" : "2"},
+    {"nibss" :  "20", "tams" : "5"},
+    {"nibss" :  "4A", "tams" : "1"},
+    {"nibss" :  "4F", "tams" : "1"},
+    {"nibss" :  "31", "tams" : "7"},
+    {"nibss" :  "90", "tams" : "8"},
+    {"nibss" :  "38", "tams" : "9"},
+    {"nibss" :  "40", "tams" : "10"},
+    {"nibss" :  "21", "tams" : "11"},
+    {"nibss" :  "48", "tams" : "39"}
+]

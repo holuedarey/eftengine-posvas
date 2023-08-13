@@ -1,0 +1,102 @@
+{
+    "url" : "https://mdw.neolifeafrica.info/banks/api/payment",
+    "test_token" : "jZPyU47LIcDQiDNt",
+    "identifier" : "neolife",
+    "bank_token_config" : [
+        {
+            "bank" : "ACCESS BANK",
+            "selector" : ["2044"],
+            "token" : "Pv8IR5T6NLe7uQ7C"
+        },
+        {
+            "bank" : "ZENITH",
+            "selector" : ["2057"],
+            "token" : "4XjwijZpKKZuramw"
+        },
+        {
+            "bank" : "GTBANK",
+            "selector" : ["2058"],
+            "token" : "bgEbn4lcJH66D1B1"
+        },
+        {
+            "bank" : "UBA",
+            "selector" : ["2033"],
+            "token" : "RNdCsqDcfdOD8jkb"
+        },
+        {
+            "bank" : "STANBIC IBTC",
+            "selector" : ["2039"],
+            "token" : "lZ1B3921WQVEPf3B"
+        },
+        {
+            "bank" : "DIAMOND BANK",
+            "selector" : ["2063"],
+            "token" : null
+        },
+        {
+            "bank" : "ECO BANK",
+            "selector" : ["2050","2056"],
+            "token" : null
+        },
+        {
+            "bank" : "FIDELITY BANK",
+            "selector" : ["2070"],
+            "token" : null
+        },
+        {
+            "bank" : "FIRST BANK",
+            "selector" : ["2011","2071","2701"],
+            "token" : null
+        },
+        {
+            "bank" : "FIRST BANK",
+            "selector" : ["2011","2071","2701"],
+            "token" : null
+        },
+        {
+            "bank" : "FCMB BANK",
+            "selector" : ["2214","2085"],
+            "token" : null
+        },
+        {
+            "bank" : "HERITAGE BANK",
+            "selector" : ["2030","2084"],
+            "token" : null
+        },
+        {
+            "bank" : "KEYSTONE BANK",
+            "selector" : ["2082"],
+            "token" : null
+        },
+        {
+            "bank" : "POLARIS BANK",
+            "selector" : ["2076"],
+            "token" : null
+        },
+        {
+            "bank" : "UNION BANK",
+            "selector" : ["2032"],
+            "token" : null
+        },
+        {
+            "bank" : "UNION BANK",
+            "selector" : ["2032"],
+            "token" : null
+        },
+        {
+            "bank" : "WEMA BANK",
+            "selector" : ["2035"],
+            "token" : null
+        },
+        {
+            "bank" : "STERLING BANK",
+            "selector" : ["2232"],
+            "token" : null
+        },
+        {
+            "bank" : "UNITY BANK",
+            "selector" : ["2215"],
+            "token" : null
+        }
+    ]
+}

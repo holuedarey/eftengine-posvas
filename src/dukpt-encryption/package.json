@@ -1,0 +1,22 @@
+{
+  "name": "dukpt-node",
+  "version": "1.0.0",
+  "description": "testing dukpt",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "encryption",
+    "dukpt"
+  ],
+  "author": "femiofficial",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dukpt": "^2.0.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.4"
+  }
+}

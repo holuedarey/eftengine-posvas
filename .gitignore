@@ -1,0 +1,16 @@
+/node_modules
+/certificates
+*.env
+/terminal-logs
+/mw-logs
+/src/config/disabled-tids.json
+/src/config/virtual-tids-keys.json
+
+/Report
+dev.env
+dbbackupscript.js
+manualemailnotifier.js
+Logs-troubleShoot
+*test*.js
+*.log
+*txt

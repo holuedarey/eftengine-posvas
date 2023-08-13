@@ -1,0 +1,14 @@
+{
+    "00": "aid",
+    "01": "tvr",
+    "02": "tsi",
+    "03": "label",
+    "04": "expiry",
+    "05": "card_holder_name",
+    "06": "tec",
+    "07": "cust_contact",
+    "08": "model",
+    "09": "serial",
+    "10": "version"
+    
+}

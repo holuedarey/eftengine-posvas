@@ -1,0 +1,12 @@
+[
+    {
+        "bank": "uba",
+        "IP_LIVE": "196.216.144.142",
+        "PORT_LIVE": "9091",
+        "IP_TEST": "196.216.144.28",
+        "PORT_TEST": "80",
+        "COM_KEY_1": "0EDAD09E1508496B7931E5D583AD46EF",
+        "COM_KEY_2": "32F2E0ABC7F4E5B9EF5246C8A82694D3",
+        "selector": "2033"
+    }
+]

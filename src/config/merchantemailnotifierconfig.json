@@ -1,0 +1,26 @@
+[
+    {
+        "identifier": "RETAIL SUPERMARKETS NIG. LTD(ABIA MALL- UMUAHIA)",
+        "merhantId": "2058AB018392932",
+        "terminals": [
+            "2058UQ92",
+            "2058UQ93",
+            "2058UQ94",
+            "2058UQ95",
+            "2058UQ96"
+        ],
+        "receivers": "oola@shoprite.co.za,cbg2deola@gtbank.com"
+    },
+    {
+        "identifier": "RETAIL SUPERMARKETS NIG. LTD",
+        "merhantId": "205803018392900",
+        "terminals": [
+            "2058YT93",
+            "2058YT94",
+            "2058YT95",
+            "2058YT96",
+            "2058YT97"
+        ],
+        "receivers": "oola@shoprite.co.za,cbg2deola@gtbank.com"
+    }
+]
