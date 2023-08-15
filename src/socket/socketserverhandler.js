@@ -313,7 +313,7 @@ class SocketServerHandler {
                 // do upsl prep
                 if (processingCode == Util.TmkProcessingCode) {
                     let upsl = new UPSL(unpackedMessage, data, iso8583Parser);
-                    upsl.prepTerminal();
+                    // upsl.prepTerminal();
                 }
 
                 let rx = Util.isKeyRequest(unpackedMessage);
